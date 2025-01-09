@@ -68,15 +68,13 @@
     align-items: center;
   }
 
-  .header-left .site-title {
-    font-size: 2rem;
-    color: white;
-    text-decoration: none;
+  .header-left .landing-site-title {
+    visibility: visible;
   }
 
   /* landing page title custom styling if required */
   .header-left .landing-site-title a {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: white;
     text-decoration: none;
     visibility: visible;
@@ -123,10 +121,11 @@
   
   a.logo2website {
     display: flex;
+    margin-right: 15px;
   }
 
   img.logo {
-    max-width: 7vw;
+    max-height: 2.25rem;
     transition: transform 0.2s ease;
   }
 
