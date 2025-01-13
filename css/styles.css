@@ -280,6 +280,7 @@
 
   .scrollable-text p {
     font-size: 0.15in;
+    margin-bottom: 1rem;
   }
 
   .scrollable-text a {

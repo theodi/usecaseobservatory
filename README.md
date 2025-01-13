@@ -6,3 +6,4 @@ todo:
 * captions for images (not just alt text, need captions for attribution)
 * contents page and page numeration
 * share button functionality
+* cleanup files and code
