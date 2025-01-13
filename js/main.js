@@ -3,7 +3,7 @@ var page_counter = 0;
 
 
 // Function to fetch and render a Markdown file
-async function loadMarkdown(filePath, elementId) {
+async function loadMarkdown_full(filePath, elementId) {
     try {
       const response = await fetch(filePath);
       if (!response.ok) {
@@ -16,6 +16,30 @@ async function loadMarkdown(filePath, elementId) {
       document.getElementById(elementId).innerHTML = "<p>Sorry, the content couldn't be loaded.</p>";
     }
   }
+
+async function loadMarkdown_title(filePath, elementId) {
+  try {
+    const response = await fetch(filePath);
+    if (!response.ok) {
+      throw new Error (`HTTP error! status: ${response.status}`);
+    }
+    const text = await response.text()
+
+    const lines = text.split('\n');
+    let firstLine = '';
+    for (let line of lines) {
+      if (line.trim() !== '') {
+        firstLine = line;
+        break;
+      }
+    }
+
+    document.getElementById(elementId).innerHTML = marked.parse(firstLine);
+  } catch (error) {
+    console.error(`Error loading ${filePath}:`, error);
+    document.getElementById(elementId).innerHTML = "<p>Sorry, the content couldn't be loaded.</p>";
+  }
+}
 
 // Handle Start Carousel Button Click
 // function initializeStartCarouselButton() {
@@ -161,7 +185,147 @@ function initializeNextButton() {
       })
     }
   }
+   
+  // handle navigation button clicks
+
+  function initializeNavButton() {
+    const navButton = document.getElementById('nav-button');
     
+    if (navButton) {
+      navButton.addEventListener('click', () => {
+        const landingTextContainer = document.getElementById('landing-text-container');
+        const current_carouselImage = document.querySelector(`#case-study-${page_counter}-image-container`);
+        const current_carouselText = document.querySelector(`#case-study-${page_counter}-text-container`);
+        const contents_container = document.getElementById('contents-text-container')
+        const prevButton = document.getElementById('previous-button')
+        const nextButton = document.getElementById('next-button')
+
+        
+        setTimeout(() => {
+          if (page_counter != 'nav') {
+              if (page_counter == 0) {
+                landingTextContainer.classList.remove('fade-in');
+                landingTextContainer.classList.add('fade-out');
+              } else {
+                current_carouselImage.classList.remove('fade-in');
+                current_carouselText.classList.remove('fade-in');
+                current_carouselImage.classList.add('fade-out');
+                current_carouselText.classList.add('fade-out');
+              }
+              contents_container.classList.remove('hidden');
+              contents_container.classList.add('fade-in');
+              contents_container.classList.remove('fade-out');
+              prevButton.classList.remove('fade-in');
+              prevButton.classList.add('fade-out');
+              nextButton.classList.remove('fade-in');
+              nextButton.classList.add('fade-out');
+              navButton.classList.remove('fade-in');
+              navButton.classList.add('fade-out');
+              page_counter ='nav';
+          } else {
+            
+          }
+          
+          console.log("page counter: ", page_counter)
+        }, 1);
+      })
+    }
+  }
+
+  function initializeSingleNavButton(num) {
+    const pageButton = document.getElementById(`contents-case-study-${num}`)
+    const navButton = document.getElementById('nav-button');
+    const prevButton = document.getElementById('previous-button')
+    const nextButton = document.getElementById('next-button')
+
+
+    if (pageButton) {
+      pageButton.addEventListener('click', () => {
+        const carouselImage =  document.querySelector(`#case-study-${num}-image-container`);
+        const carouselText =  document.querySelector(`#case-study-${num}-text-container`);
+        const navPage = document.getElementById('contents-text-container');
+        setTimeout(() => {
+          navPage.classList.remove('fade-in');
+          navPage.classList.add('fade-out');
+          navPage.classList.add('hidden');
+
+          carouselImage.classList.remove('fade-out');
+          carouselText.classList.remove('fade-out');
+          carouselImage.classList.add('fade-in');
+          carouselText.classList.add('fade-in');
+
+          navButton.classList.remove('fade-out');
+          navButton.classList.add('fade-in');
+          nextButton.classList.remove('fade-out');
+          nextButton.classList.add('fade-in');
+          prevButton.classList.remove('fade-out');
+          prevButton.classList.add('fade-in');
+
+          page_counter = num;
+          console.log("page counter: ", page_counter)
+  
+        }, 1)
+
+      })
+
+    }
+  }
+
+  function initializeIndexButton() {
+    const indexButton = document.getElementById('index-page-button')
+
+    if (indexButton) {
+      indexButton.addEventListener('click', () => {
+        const landingTextContainer = document.getElementById('landing-text-container');
+        if (page_counter != 'nav') {
+          if (page_counter != 0) {
+            const current_carouselImage = document.querySelector(`#case-study-${page_counter}-image-container`);
+            const current_carouselText = document.querySelector(`#case-study-${page_counter}-text-container`);
+  
+            setTimeout(() => {
+              current_carouselImage.classList.remove('fade-in');
+              current_carouselText.classList.remove('fade-in');
+              current_carouselImage.classList.add('fade-out');
+              current_carouselText.classList.add('fade-out');
+              landingTextContainer.classList.remove('fade-out');
+              landingTextContainer.classList.add('fade-in');
+              landingTextContainer.classList.remove('hidden')
+              page_counter = 0
+              console.log("page counter: ", page_counter)
+  
+  
+  
+            }, 1);
+
+          }
+
+        } else {
+          const navPage = document.getElementById('contents-text-container');
+          const navButton = document.getElementById('nav-button');
+          const prevButton = document.getElementById('previous-button')
+          const nextButton = document.getElementById('next-button')
+          setTimeout(() => {
+            navPage.classList.remove('fade-in');
+            navPage.classList.add('fade-out');
+            landingTextContainer.classList.remove('fade-out');
+            landingTextContainer.classList.add('fade-in');
+            landingTextContainer.classList.remove('hidden');
+            navButton.classList.remove('fade-out');
+            navButton.classList.add('fade-in');
+            nextButton.classList.remove('fade-out');
+            nextButton.classList.add('fade-in');
+            prevButton.classList.remove('fade-out');
+            prevButton.classList.add('fade-in');
+            page_counter = 0
+            console.log("page counter: ", page_counter)
+            
+
+          }, 1);
+        }
+      })
+    }
+  }
+
   function initializeScrollListeners() {
     const scrollableTexts = document.querySelectorAll('.scrollable-text');
     
@@ -185,14 +349,26 @@ function initializeNextButton() {
 
   document.addEventListener("DOMContentLoaded", () => {
     const scrollableTexts = document.querySelectorAll('.scrollable-text');
-  
     scrollableTexts.forEach((scrollableText) => {
       const markdownFile = `writeups/${scrollableText.getAttribute('data-markdown')}`;
-      loadMarkdown(markdownFile, scrollableText.id);
+      loadMarkdown_full(markdownFile, scrollableText.id);
     });
+
+    const contentsEntries = document.querySelectorAll('.contents-entry');
+    contentsEntries.forEach((entry) => {
+      const markdownFile = `writeups/${entry.getAttribute('data-markdown')}`;
+      loadMarkdown_title(markdownFile, entry.id)
+    })
   
     initializeScrollListeners();
     // initializeStartCarouselButton();
     initializeNextButton();
     initializePrevButton();
+    initializeNavButton();
+    initializeIndexButton();
+    // initializeSingleNavButton(1);
+    for (let index = 0; index < 16; index++) {
+      initializeSingleNavButton(index)
+      
+    };
   });

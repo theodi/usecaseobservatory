@@ -1,5 +1,5 @@
 # Demonstrating the impactful uses of open data
-<img src="images\other_images\happy-confident-old-european-man-with-crossed-arms-2023-11-27-05-18-15-utc.jpg">
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales ut urna eget feugiat. Vivamus mollis dignissim magna eget vulputate. Nam suscipit ex sed ante hendrerit volutpat. Nullam egestas felis eu facilisis semper. Etiam aliquet elit cursus sem aliquet aliquam. Nam eleifend odio tempus elit dignissim, ac pharetra ex vehicula. Pellentesque sit amet iaculis dui, at scelerisque nunc. Suspendisse et diam ultricies, consequat eros nec, volutpat erat.
 

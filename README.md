@@ -7,3 +7,7 @@ todo:
 * contents page and page numeration
 * share button functionality
 * cleanup files and code
+
+
+CURRENT TODO
+* have contents headers draw from markdown
