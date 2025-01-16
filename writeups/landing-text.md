@@ -1,4 +1,10 @@
-# Demonstrating the impactful uses of open data
+# Showcasing the real-world impacts of open data
+
+![image](../images/other_images/observatory.png)
+
+(this would be an introduction, with brief summary of what we did and then how to navigate)
+
+**IMPORTANT** - navigate with the arrow buttons on the left and right of the screen, or click 'navigate' to move to a specific case study
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales ut urna eget feugiat. Vivamus mollis dignissim magna eget vulputate. Nam suscipit ex sed ante hendrerit volutpat. Nullam egestas felis eu facilisis semper. Etiam aliquet elit cursus sem aliquet aliquam. Nam eleifend odio tempus elit dignissim, ac pharetra ex vehicula. Pellentesque sit amet iaculis dui, at scelerisque nunc. Suspendisse et diam ultricies, consequat eros nec, volutpat erat.

@@ -1,13 +1,10 @@
 URL: usecaseobservatory.theodi.org
 
 todo:
-* get ODI style sheet to make sure everything's ok (e.g. shouldn't have rounded corners)
-* check with DD about colours
-* captions for images (not just alt text, need captions for attribution)
-* contents page and page numeration
-* share button functionality
-* cleanup files and code
+* check with DD about colours - kinda done
+* min width of scrollable text should be adaptive, at least for landing
+* next/prev buttons should work with arrow keys
+* home button on nav page to go back to landing
+* get analytics stuff from David
 
 
-CURRENT TODO
-* have contents headers draw from markdown

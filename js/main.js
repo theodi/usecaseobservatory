@@ -1,6 +1,98 @@
 var page_counter = 0;
 
+// on load in, need to see whether page is defined as a query string in the URL
+// if it is, set page_counter = to that and go to that page
+// if it is not, go to landing page, create query string in URL so that page = 0
+var url = new URL(window.location.href);
+const params = url.searchParams.getAll('page')
+if (params.length != 0) {
+  if (params[0] == 'nav') {
+    page_counter == 'nav'
+  } else {
+    page_counter = Number(params[0])
+  }
+  navigateToPageCount(page_counter)
+} else {
+  url.searchParams.set('page', page_counter);
+  window.history.pushState(null, '', url.toString());
+}
 
+// function to navigate to page based on page counter
+function navigateToPageCount(page_counter) {
+  const landingTextContainer = document.getElementById('landing-text-container');
+  if (page_counter != 'nav') {
+    if (page_counter == 0) {
+      const next_carouselImage = document.querySelector(`.case-study-${page_counter}-image-container`);
+      // const next_carouselText = document.querySelector(`#case-study-${page_counter}-text-container`);
+      // landingTextContainer.classList.add('fade-out');
+      landingTextContainer.classList.remove('fade-in');
+      landingTextContainer.classList.add('hidden');
+      url.searchParams.set('page', page_counter);
+      window.history.pushState(null, '', url.toString());
+      console.log("page counter: ", page_counter)
+    
+      setTimeout(() => {
+        next_carouselImage.classList.add('fade-in');
+        // next_carouselText.classList.add('fade-in');
+        next_carouselImage.classList.remove('hidden');
+        // next_carouselText.classList.remove('hidden');
+        next_carouselImage.classList.remove('fade-out');
+        // next_carouselText.classList.remove('fade-out');
+        
+      }, 0.1);
+    } else {
+      const next_carouselImage = document.querySelector(`#case-study-${page_counter}-image-container`);
+      const next_carouselText = document.querySelector(`#case-study-${page_counter}-text-container`);
+      // landingTextContainer.classList.add('fade-out');
+      landingTextContainer.classList.remove('fade-in');
+      landingTextContainer.classList.add('hidden');
+      url.searchParams.set('page', page_counter);
+      window.history.pushState(null, '', url.toString());
+      console.log("page counter: ", page_counter)
+    
+      setTimeout(() => {
+        next_carouselImage.classList.add('fade-in');
+        next_carouselText.classList.add('fade-in');
+        next_carouselImage.classList.remove('hidden');
+        next_carouselText.classList.remove('hidden');
+        next_carouselImage.classList.remove('fade-out');
+        next_carouselText.classList.remove('fade-out');
+        
+      }, 0.1);
+      
+    }
+  } else {
+    const landingTextContainer = document.getElementById('landing-text-container');
+    // const current_carouselImage = document.querySelector(`#case-study-${page_counter}-image-container`);
+    // const current_carouselText = document.querySelector(`#case-study-${page_counter}-text-container`);
+    const contents_container = document.getElementById('contents-text-container');
+    const prevButton = document.getElementById('previous-button');
+    const nextButton = document.getElementById('next-button');
+    const navButton = document.getElementById('nav-button');
+    // landingTextContainer.classList.add('fade-out');
+    landingTextContainer.classList.remove('fade-in');
+    landingTextContainer.classList.add('hidden');
+  
+    setTimeout(() => {
+      contents_container.classList.remove('hidden');
+      contents_container.classList.add('fade-in');
+      contents_container.classList.remove('fade-out');
+      prevButton.classList.remove('fade-in');
+      prevButton.classList.add('fade-out');
+      nextButton.classList.remove('fade-in');
+      nextButton.classList.add('fade-out');
+      navButton.classList.remove('fade-in');
+      navButton.classList.add('fade-out');
+      
+      url.searchParams.set('page', page_counter);
+      window.history.pushState(null, '', url.toString());
+      console.log("page counter: ", page_counter)
+    }, 0.1);
+
+  }
+
+
+}
 
 // Function to fetch and render a Markdown file
 async function loadMarkdown_full(filePath, elementId) {
@@ -121,7 +213,8 @@ function initializeNextButton() {
           next_carouselText.classList.remove('fade-out');
           page_counter += 1;
         }
-        
+        url.searchParams.set('page', page_counter);
+        window.history.pushState(null, '', url.toString());
         console.log("page counter: ", page_counter)
       }, 1);
     })
@@ -179,7 +272,8 @@ function initializeNextButton() {
             _15_carouselText.classList.remove('fade-out');
             page_counter = 15;
           }
-          
+          url.searchParams.set('page', page_counter);
+          window.history.pushState(null, '', url.toString());
           console.log("page counter: ", page_counter)
         }, 1);
       })
@@ -225,7 +319,8 @@ function initializeNextButton() {
           } else {
             
           }
-          
+          url.searchParams.set('page', page_counter);
+          window.history.pushState(null, '', url.toString());
           console.log("page counter: ", page_counter)
         }, 1);
       })
@@ -261,7 +356,12 @@ function initializeNextButton() {
           prevButton.classList.remove('fade-out');
           prevButton.classList.add('fade-in');
 
+          navButton.classList.remove('fade-in');
+
+
           page_counter = num;
+          url.searchParams.set('page', page_counter);
+          window.history.pushState(null, '', url.toString());
           console.log("page counter: ", page_counter)
   
         }, 1)
@@ -291,6 +391,8 @@ function initializeNextButton() {
               landingTextContainer.classList.add('fade-in');
               landingTextContainer.classList.remove('hidden')
               page_counter = 0
+              url.searchParams.set('page', page_counter);
+              window.history.pushState(null, '', url.toString());
               console.log("page counter: ", page_counter)
   
   
@@ -317,6 +419,8 @@ function initializeNextButton() {
             prevButton.classList.remove('fade-out');
             prevButton.classList.add('fade-in');
             page_counter = 0
+            url.searchParams.set('page', page_counter);
+            window.history.pushState(null, '', url.toString());
             console.log("page counter: ", page_counter)
             
 
