@@ -1,12 +1,12 @@
 # Showcasing the real-world impacts of open data
 
-![image](../images/other_images/observatory.png)
+![image](https://theodi.cdn.ngo/media/images/Microsoft-data-prompt-workshop-ba.2e16d0ba.fill-1110x452.png)
 
 (this would be an introduction, with brief summary of what we did and then how to navigate)
 
-**IMPORTANT** - navigate with the arrow buttons on the left and right of the screen, or click 'navigate' to move to a specific case study
+**IMPORTANT** - navigate with the arrow buttons on the left and right of the screen (can use your keyboard arrow keys too), or click 'navigate' to move to a specific case study
 
-
+<!-- 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales ut urna eget feugiat. Vivamus mollis dignissim magna eget vulputate. Nam suscipit ex sed ante hendrerit volutpat. Nullam egestas felis eu facilisis semper. Etiam aliquet elit cursus sem aliquet aliquam. Nam eleifend odio tempus elit dignissim, ac pharetra ex vehicula. Pellentesque sit amet iaculis dui, at scelerisque nunc. Suspendisse et diam ultricies, consequat eros nec, volutpat erat.
 
 *Nulla in placerat nisi. Vestibulum cursus faucibus neque, quis elementum dolor scelerisque ut. Nullam sed hendrerit risus. Nulla ut erat a nisi feugiat faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam eu neque enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sit amet mi non sapien laoreet vehicula. Nullam sit amet magna elit. Vivamus pretium elementum tortor. Nulla facilisi. Quisque et neque purus. Phasellus hendrerit orci in orci ornare rutrum. Fusce tempus quis ligula ac gravida. Maecenas eget laoreet enim, a porta dui.*
@@ -27,4 +27,4 @@ Vivamus aliquet maximus diam vel condimentum. Morbi faucibus ex mauris, nec curs
 
 Mauris ut tincidunt turpis. Integer dignissim nisi erat, ut posuere nisl ullamcorper nec. Donec quis semper orci, a ultrices nisi. Morbi sit amet nulla sed ex ultrices volutpat nec id ex. Vivamus sed venenatis lacus. Praesent viverra dolor et molestie mattis. Vestibulum at ante sollicitudin, porta risus a, pharetra nibh.
 
-# end
+# end -->

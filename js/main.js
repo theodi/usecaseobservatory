@@ -165,6 +165,20 @@ async function loadMarkdown_title(filePath, elementId) {
 //   }
 
   // handle next clicks
+
+const nextButton = document.getElementById('next-button');
+if (nextButton) {
+  const handleKeyDown = (event) => {
+    if (event.key === 'ArrowRight') {
+      nextButton.click();
+    }
+  };
+  document.addEventListener('keydown', handleKeyDown);
+  console.log('Added keydown event listener for right arrow key.');
+} else {
+  console.error('Button with id "next-button" not found.');
+} 
+
 function initializeNextButton() {
   const nextButton = document.getElementById('next-button');
   
@@ -221,6 +235,18 @@ function initializeNextButton() {
   }
 }
   // handle previous clicks
+  const prevButton = document.getElementById('previous-button');
+  if (prevButton) {
+  const handleKeyDown = (event) => {
+    if (event.key === 'ArrowLeft') {
+      prevButton.click();
+    }
+  };
+  document.addEventListener('keydown', handleKeyDown);
+  console.log('Added keydown event listener for right arrow key.');
+  } else {
+  console.error('Button with id "previous-button" not found.');
+  } 
 
   function initializePrevButton() {
     const prevButton = document.getElementById('previous-button');
