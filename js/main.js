@@ -7,7 +7,7 @@ var url = new URL(window.location.href);
 const params = url.searchParams.getAll('page')
 if (params.length != 0) {
   if (params[0] == 'nav') {
-    page_counter == 'nav'
+    page_counter = 'nav'
   } else {
     page_counter = Number(params[0])
   }
