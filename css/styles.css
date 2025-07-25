@@ -397,6 +397,10 @@ img.logo:hover {
   margin: auto;
 }
 
+.scrollable-text ul {
+  padding-left: 40px;
+}
+
 /* .carousel-text {
   flex: 4;
   margin-left: 20px;
