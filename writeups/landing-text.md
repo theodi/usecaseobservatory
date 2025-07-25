@@ -1,30 +1,29 @@
 # Showcasing the real-world impacts of open data
 
-![image](https://theodi.cdn.ngo/media/images/Microsoft-data-prompt-workshop-ba.2e16d0ba.fill-1110x452.png)
+Over the last decade, open data practices have matured from simple data publishing to a [spectrum of data-sharing solutions](https://theodi.org/insights/tools/the-data-spectrum/) that each function to the benefit of the wider technological ecosystem. 
 
-(this would be an introduction, with brief summary of what we did and then how to navigate)
+The potential benefits of open data are well-documented; research at the Open Data Institute (ODI) and beyond has explored how well-designed open data sharing can bring accountability, transparency and trust.
 
-**IMPORTANT** - navigate with the arrow buttons on the left and right of the screen (can use your keyboard arrow keys too), or click 'navigate' to move to a specific case study
+However, despite the growing importance of open data, measuring its impact is challenging and there is a relative lack of information about how open data has delivered change and its significance for individuals, organisations and institutions around the world. 
 
-<!-- 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales ut urna eget feugiat. Vivamus mollis dignissim magna eget vulputate. Nam suscipit ex sed ante hendrerit volutpat. Nullam egestas felis eu facilisis semper. Etiam aliquet elit cursus sem aliquet aliquam. Nam eleifend odio tempus elit dignissim, ac pharetra ex vehicula. Pellentesque sit amet iaculis dui, at scelerisque nunc. Suspendisse et diam ultricies, consequat eros nec, volutpat erat.
+This information is important, especially considering the ever-growing significance of open data in the current AI revolution. Open data from organisational and governmental sources can be combined to build the training corpora for AI models, which would in turn provide the models with up-to-date, factual information with known provenance. Additionally, open data can be explored and analysed to find actionable insights about the problems facing the global population, thereby revealing where technology and AI can be applied for societal good.
 
-*Nulla in placerat nisi. Vestibulum cursus faucibus neque, quis elementum dolor scelerisque ut. Nullam sed hendrerit risus. Nulla ut erat a nisi feugiat faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam eu neque enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sit amet mi non sapien laoreet vehicula. Nullam sit amet magna elit. Vivamus pretium elementum tortor. Nulla facilisi. Quisque et neque purus. Phasellus hendrerit orci in orci ornare rutrum. Fusce tempus quis ligula ac gravida. Maecenas eget laoreet enim, a porta dui.*
+For these effects to be realised, developers and practitioners need to be made aware of the true benefits of open data - not only its potential, but also how it has brought impact and changed both businesses and livelihoods worldwide.
 
-[Phasellus](https://www.theodi.org) a velit lobortis, mollis mi in, dapibus sapien. Etiam placerat luctus lorem ac accumsan. Nullam eu massa pharetra, aliquam diam eget, ornare leo. Ut ut nisl vehicula, lacinia dui eget, faucibus dui. In aliquam odio id dui dapibus, vitae efficitur neque venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed accumsan rhoncus elit, at faucibus velit fringilla non.
+We sought to do this by building this website. The Open Data Use Case Observatory is a collection of 15 case studies from across subject matters and applications, each of which presents a unique usage of open data that had real-world impact. 
 
-Vivamus aliquet maximus diam vel condimentum. Morbi faucibus ex mauris, nec cursus metus imperdiet eu. Ut ipsum odio, efficitur rhoncus magna in, venenatis tincidunt tortor. Nam vehicula, augue nec faucibus cursus, tortor lacus lobortis erat, nec mollis nunc eros eu urna. Nunc luctus nec nulla ac cursus. Etiam dui nisi, convallis a aliquam ac, volutpat vel dui. Suspendisse vitae porttitor nunc, eget tempor ipsum. Sed justo tellus, faucibus sed faucibus vitae, aliquet non diam. In scelerisque lacus ipsum, in varius urna tempor ut.
+## The Open Data Use Case Observatory
+When working on the Observatory, we kept a focus on data that conformed to [the ODI’s definition of open data](https://theodi.org/what-we-do/consultancy-and-products/open-data/). While this excluded ‘publicly available data’ - data that is published online without explicit open permissions regarding its use - this focus allowed us to explore not only how specific open data resources led to impact, but also how the infrastructure behind them enabled success.
 
-Mauris ut tincidunt turpis. Integer dignissim nisi erat, ut posuere nisl ullamcorper nec. Donec quis semper orci, a ultrices nisi. Morbi sit amet nulla sed ex ultrices volutpat nec id ex. Vivamus sed venenatis lacus. Praesent viverra dolor et molestie mattis. Vestibulum at ante sollicitudin, porta risus a, pharetra nibh.
+With this in mind, we determined the three themes that we would conform to as we looked for case studies to populate the observatory. We have curated a series of case studies that demonstrate how open data:
+* allows us to tackle society’s biggest challenges through valuable correlations across datasets, 
+* spurs innovation, driving the creation of new companies and fostering collaboration among organisations, and
+* brings benefits to businesses.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales ut urna eget feugiat. Vivamus mollis dignissim magna eget vulputate. Nam suscipit ex sed ante hendrerit volutpat. Nullam egestas felis eu facilisis semper. Etiam aliquet elit cursus sem aliquet aliquam. Nam eleifend odio tempus elit dignissim, ac pharetra ex vehicula. Pellentesque sit amet iaculis dui, at scelerisque nunc. Suspendisse et diam ultricies, consequat eros nec, volutpat erat.
+Over months of in-depth desk research and interviews with open data publishers and users, we assembled the 15 case studies presented here. The Observatory encompasses a broad range of subject matters, modalities and geographies. Importantly, we paid close attention to the intricacies of each dataset and how each intricacy enabled the datasets to be used for impact, whether that came from use in the training of AI models or in other technological, data-led interventions.
 
-Nulla in placerat nisi. Vestibulum cursus faucibus neque, quis elementum dolor scelerisque ut. Nullam sed hendrerit risus. Nulla ut erat a nisi feugiat faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam eu neque enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sit amet mi non sapien laoreet vehicula. Nullam sit amet magna elit. Vivamus pretium elementum tortor. Nulla facilisi. Quisque et neque purus. Phasellus hendrerit orci in orci ornare rutrum. Fusce tempus quis ligula ac gravida. Maecenas eget laoreet enim, a porta dui.
+## Navigating the Observatory
+You can explore the Observatory by using the arrows on either side of the page or the arrow keys on your keyboard to move between the case studies. To see a full overview of all of the case studies, click the Navigation button in the bottom left corner of your screen. Finally, additional information about the Observatory, our methodology, and more, can be found by clicking the buttons in the top right of your screen.  
 
-Phasellus a velit lobortis, mollis mi in, dapibus sapien. Etiam placerat luctus lorem ac accumsan. Nullam eu massa pharetra, aliquam diam eget, ornare leo. Ut ut nisl vehicula, lacinia dui eget, faucibus dui. In aliquam odio id dui dapibus, vitae efficitur neque venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed accumsan rhoncus elit, at faucibus velit fringilla non.
-
-Vivamus aliquet maximus diam vel condimentum. Morbi faucibus ex mauris, nec cursus metus imperdiet eu. Ut ipsum odio, efficitur rhoncus magna in, venenatis tincidunt tortor. Nam vehicula, augue nec faucibus cursus, tortor lacus lobortis erat, nec mollis nunc eros eu urna. Nunc luctus nec nulla ac cursus. Etiam dui nisi, convallis a aliquam ac, volutpat vel dui. Suspendisse vitae porttitor nunc, eget tempor ipsum. Sed justo tellus, faucibus sed faucibus vitae, aliquet non diam. In scelerisque lacus ipsum, in varius urna tempor ut.
-
-Mauris ut tincidunt turpis. Integer dignissim nisi erat, ut posuere nisl ullamcorper nec. Donec quis semper orci, a ultrices nisi. Morbi sit amet nulla sed ex ultrices volutpat nec id ex. Vivamus sed venenatis lacus. Praesent viverra dolor et molestie mattis. Vestibulum at ante sollicitudin, porta risus a, pharetra nibh.
-
-# end -->
+## Get in touch
+If you have feedback on the Open Data Use Case Observatory, please get in touch at [research@theodi.org](mailto:research@theodi.org).

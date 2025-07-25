@@ -514,7 +514,7 @@ figcaption {
 #contents-case-study-1 {
   grid-column: 1;
   grid-row: 1;
-  background-image: url("../images/case_study_images/casestudy1.avif");
+  background-image: url("../images/case_study_images/casestudy1.jpg");
   background-color: #072589;
   background-size: cover;
   background-blend-mode: soft-light;
@@ -523,7 +523,7 @@ figcaption {
 #contents-case-study-2 {
   grid-column: 2;
   grid-row: 1;
-  background-image: url("../images/case_study_images/casestudy2.avif");
+  background-image: url("../images/case_study_images/casestudy2.jpeg");
   background-color: #072589;
   background-size: cover;
   background-blend-mode: soft-light;
@@ -550,7 +550,7 @@ figcaption {
 #contents-case-study-5 {
   grid-column: 5;
   grid-row: 1;
-  background-image: url("../images/case_study_images/casestudy5.avif");
+  background-image: url("../images/case_study_images/casestudy5.jpg");
   background-color: #072589;
   background-size: cover;
   background-blend-mode: soft-light;
@@ -559,7 +559,7 @@ figcaption {
 #contents-case-study-6 {
   grid-column: 1;
   grid-row: 2;
-  background-image: url("../images/case_study_images/casestudy6.png");
+  background-image: url("../images/case_study_images/casestudy6.jpg");
   background-color: #072589;
   background-size: cover;
   background-blend-mode: soft-light;
@@ -568,7 +568,7 @@ figcaption {
 #contents-case-study-7 {
   grid-column: 2;
   grid-row: 2;
-  background-image: url("../images/case_study_images/casestudy7.jpg");
+  background-image: url("../images/case_study_images/casestudy7.avif");
   background-color: #072589;
   background-size: cover;
   background-blend-mode: soft-light;
@@ -577,7 +577,7 @@ figcaption {
 #contents-case-study-8 {
   grid-column: 3;
   grid-row: 2;
-  background-image: url("../images/case_study_images/casestudy8.jpg");
+  background-image: url("../images/case_study_images/casestudy8.png");
   background-color: #072589;
   background-size: cover;
   background-blend-mode: soft-light;
@@ -631,7 +631,7 @@ figcaption {
 #contents-case-study-14 {
   grid-column: 4;
   grid-row: 3;
-  background-image: url("../images/case_study_images/casestudy14.jpg");
+  background-image: url("../images/case_study_images/casestudy14.png");
   background-color: #072589;
   background-size: cover;
   background-blend-mode: soft-light;
