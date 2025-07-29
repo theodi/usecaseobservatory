@@ -2,7 +2,7 @@
 
 Over the last decade, open data practices have matured from simple data publishing to a [spectrum of data-sharing solutions](https://theodi.org/insights/tools/the-data-spectrum/) that each function to the benefit of the wider technological ecosystem. 
 
-The potential benefits of open data are well-documented; research at the Open Data Institute (ODI) and beyond has explored how well-designed open data sharing can bring accountability, transparency and trust.
+The potential benefits of open data are well-documented; research at the [Open Data Institute (ODI)](https://theodi.org/) and beyond has explored how well-designed open data sharing can bring accountability, transparency and trust.
 
 However, despite the growing importance of open data, measuring its impact is challenging and there is a relative lack of information about how open data has delivered change and its significance for individuals, organisations and institutions around the world. 
 
